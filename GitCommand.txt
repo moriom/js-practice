@@ -9,17 +9,8 @@ git push origin master //push to github
 git status
 
 
+#To pull
+git pull origin master
 
-
-
-
-
-
-
-
-#Init git repository for first time
-git init
-git add .
-git commit -m "first commit"
-git remote add origin https://github.com/moriom/js-practice.git
-git push -u origin master
+#To clone
+git clone https://github.com/moriom/js-practice.git
