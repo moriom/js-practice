@@ -1,15 +1,25 @@
-#Init git repository for first time
-# git init
 
-#To commit things
+#To commit things and push
 git add .
 git commit -m "write message here"
 git push origin master //push to github
 
 
+#To see status
+git status
 
 
+
+
+
+
+
+
+
+
+#Init git repository for first time
 git init
+git add .
 git commit -m "first commit"
 git remote add origin https://github.com/moriom/js-practice.git
 git push -u origin master

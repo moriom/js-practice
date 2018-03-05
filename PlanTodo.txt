@@ -1,5 +1,5 @@
 1. Date, Float
-2. Reading and writing in a file
+2. Reading and writing in a file --done
 3. Boolean convert, !!, 
 4. Number convert
 
