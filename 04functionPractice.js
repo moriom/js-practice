@@ -12,7 +12,7 @@ var anonymusFunction = function(param1){ //The variable which containing a anony
 
 //anonymusFunction('sdfasdfsdffasdf');
 
-var arrowFunction = (param1, param2)=> {
+var arrowFunction = (param1, param2)=>{
      console.log(" Its a arrow function",param1, param2);
 };
 
