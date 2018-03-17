@@ -137,18 +137,20 @@ copy(des,sou);
 //console.log('\n',des);
 
 
+
 // write a function name bookTicket which will take callback function where the function will log ticket booking
 //and after 5 seconds the callback will be exeute where callback will print 'printing ticket'
 function bookTicket(callback){
     console.log('Ticket booking');
     setTimeout(function(){
-        callback();
+        var ticketNumber = 10101;
+        callback(ticketNumber);
     },5000)
 }
 
 
-function printTicket(){
-    console.log('printing ticket');
+function printTicket(ticketNumber){
+    console.log('printing ticket',ticketNumber);
 }
 
 bookTicket(printTicket);

@@ -1,16 +1,13 @@
 var now  = new Date();
+var days = ['Sunday','Monday','Thuesday','Wednesday','Trusday','Friday','Saturday',]
 // console.log('The time is now',now);
 // console.log('Todays Date is ', now.getDate());
-// console.log('Todays day number of week  is ', now.getDay()); //will clarify more at later
-
-
+ console.log('Todays day number of week  is ',days [now.getDay()]); 
 // console.log('Current timezone is ', now.getTimezoneOffset());
 // console.log('Current year is ', now.getYear());
 // console.log('Current full year is ', now.getFullYear());
 // console.log('Current month is ', now.getMonth());
 // console.log('Current time in miliseconds is ', now.getTime());
-
-
 // console.log('Now hours is ', now.getHours());
 // console.log('Now minutes is ', now.getMinutes());
 // console.log('Now seconds is ', now.getMinutes());
@@ -32,5 +29,16 @@ var now  = new Date();
 
 //new Date(year, month [, day [, hours [, minutes [, seconds [, milliseconds]]]]]);
 
-var aDate = new Date(2012,0,15);
-console.log(aDate);
+//var aDate = new Date(2012,0,15);
+//console.log(aDate);
+
+
+##pblm
+// Write a function name toFormat where it will take string parameter like yyyy, MM, dd, hh, mm, ss
+// which will return yyyy for year MM month and others as repectively
+
+
+
+
+
+

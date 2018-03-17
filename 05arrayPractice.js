@@ -33,7 +33,6 @@ console.log("\nI'm odd ",person.name);
 }
 
 
-
 // find the eligable person whose age is even.
  var people = [{name:'Anna', age: 22},{name: 'Jim', age: 23}];
 people.push({name: 'Mizan', age: 24}); //3rd item push in array
@@ -70,7 +69,7 @@ printArray([2,5,8,7,9,23]) ;
  
 
 
-/* write a function name pick which will take two parameters like first one will be an object and second one
+/* write a function name pick,which will take two parameters like first one will be an object and second one
  will be an array,it will return a new object with value where those keys will contain at the array. */
 function pick( obj,arr ){
      var newObj = {};
@@ -122,3 +121,20 @@ var Result = max( [9,4,5,1] );
 console.log('\n Big Value :', Result);
 
 
+// merge two dimentionArray.
+var twoDimensionData = [[8,6,5],[3,7,5],[2,4]];
+
+function mergeTwoDimensionArray(twoDimensionArray) {
+    var result = [];
+    for (var outerArrayIndex = 0; outerArrayIndex < twoDimensionArray.length; outerArrayIndex++) {
+        var innerArray = twoDimensionArray[outerArrayIndex];
+        
+        for (var innerArrayIndex = 0; innerArrayIndex < innerArray.length; innerArrayIndex++ ) {
+            result.push(innerArray[innerArrayIndex]);
+        }
+    }
+    return result;
+}
+
+var mRes = mergeTwoDimensionArray(twoDimensionData);
+console.log(mRes);

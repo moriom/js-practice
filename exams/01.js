@@ -14,18 +14,15 @@ if( imNotEmpty.length == 0){
 
 //03- merge those array without using array.concat() method
 function mergeArray(arr1,arr2){
-    var newArry = [];
     for( var i = 0; i < arr1.length; i++ ){
-        var item = arr1[i];
-        for( var j = 0; i < arr2.length; j++){
-            item += arr2[j];
-            newArry = item;
-            
-        }
+      arr2.push(arr1[i]);
     }
+    return arr2;
+    //return arr1.concat(arr2);
 }
-mergeArray( arr1 = ['x','y','z'],[1,2,3])
-console.log('\n Result', newArry);
+var mergeResult = mergeArray(['x','y','z'],[1,2,3]);
+console.log(mergeResult);
+
 
 //04- find the object from below data where name is Mizan
 var people = [{name: 'Jm',age:2}, {name: 'Mm',age:23}, {name: 'An',age:25}, {name: 'Mizan',age:2}, {name: 'jeb',age:20}];
