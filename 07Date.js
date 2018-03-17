@@ -36,6 +36,44 @@ var days = ['Sunday','Monday','Thuesday','Wednesday','Trusday','Friday','Saturda
 ##pblm
 // Write a function name toFormat where it will take string parameter like yyyy, MM, dd, hh, mm, ss
 // which will return yyyy for year MM month and others as repectively
+function toFormat(st){
+    var now = new Date();
+    if(st=='yyyy') return now.getFullYear();
+    else if(st=='MM') return now.getMonth();
+    else if(st=='dd') return now.getDate();
+    else if(st=='hh') return now.getHours();
+    else if(st=='mm') return now.getMinutes();
+    else if (st=='ss') return now.getSeconds(); 
+    else return 'Invalied parameter'
+}
+var result = toFormat('dd');
+    console.log(result);
+    
+    
+// Show output in this way dd-MM-yyyy / hh-mm-ss.....
+function toFormat(str){
+    var now = new Date();
+    var formatItems = str.split('-'); // split is an array
+    var formatedDate = '';
+    for(var i=0; i < formatItems.length; i++){
+        var st = formatItems[i];
+        
+        if(formatedDate != '') formatedDate += '-';
+        
+           if(st=='yyyy') formatedDate +=  now.getFullYear();
+        else if(st=='MM') formatedDate +=  now.getMonth();
+        else if(st=='dd') formatedDate +=  now.getDate();
+        else if(st=='hh') formatedDate +=  now.getHours();
+        else if(st=='mm') formatedDate +=  now.getMinutes();
+        else if(st=='ss') formatedDate +=  now.getSeconds(); 
+    }
+    
+    return formatedDate;
+}
+var result = toFormat('hh-mm-ss');
+console.log(result);
+
+
 
 
 
